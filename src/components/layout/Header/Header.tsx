@@ -2,6 +2,33 @@ import { Container } from "../Container";
 import torraLogo from '../../../assets/logos/torraLogo.svg'
 
 
+const menuItems = [
+    {
+        label: 'Cartão Torra',
+        href: '/cartao-torra',
+    },
+    {
+        label: 'Empréstimo Pessoal',
+        href: '/emprestimo-pessoal',
+    },
+    {
+        label: 'Seguros e Assistências',
+        href: '/seguros-e-assistencias',
+    },
+    {
+        label: 'Benefícios',
+        href: '/beneficios',
+    },
+    {
+        label: 'Institucional',
+        href: '/institucional',
+    },
+    {
+        label: 'Ajuda',
+        href: '/ajuda',
+    },
+]
+
 export function Header() {
     return (
         <header className="bg-[var(--color-dark)] text-[var(--color-white)]">
@@ -13,13 +40,12 @@ export function Header() {
                         <p>Torra <br /> Cartão</p>
                     </div>
 
-                    <nav className="flex items-center gap-6">
-                        <a href="/cartao-torra">Cartão Torra</a>
-                        <a href="/emprestimo-pessoal">Empréstimo Pessoal</a>
-                        <a href="/seguros-e-assistencias">Seguros e Assistências</a>
-                        <a href="/beneficios">Benefícios</a>
-                        <a href="/institucional">Institucional</a>
-                        <a href="/ajuda">Ajuda</a>
+                    <nav>
+                        <ul className="flex items-center gap-6">{menuItems.map((menu) => (
+                            <li key={menu.href}>
+                                <a href={menu.href}>{menu.label}</a>
+                            </li>
+                        ))}</ul>
                     </nav>
 
                     <div>
