@@ -1,8 +1,6 @@
 @import "tailwindcss";
-
-@import "./tokens.css";
-@import "./globals.css";
-
+@import "./styles/tokens.css";
+@import "./styles/globals.css";
 
 :root {
   font-family: Inter, system-ui, sans-serif;
