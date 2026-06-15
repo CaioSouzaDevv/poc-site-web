@@ -1,6 +1,6 @@
 import { Container } from "../Container";
 import torraLogo from '../../../assets/logos/torraLogo.svg'
-
+import { Button } from '../../ui/Button'
 
 const menuItems = [
     {
@@ -37,7 +37,6 @@ export function Header() {
                     <div className="flex items-center">
                         <img className="w-28" src={torraLogo} alt="Cartão Torra" />
 
-                        <p>Torra <br /> Cartão</p>
                     </div>
 
                     <nav>
@@ -49,8 +48,10 @@ export function Header() {
                     </nav>
 
                     <div>
-                        Busca
-                        CTA
+                        {/* Busca */}
+                        <Button>
+                            Faça seu Cartão
+                        </Button>
                     </div>
                 </div>
             </Container>
