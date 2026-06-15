@@ -3,6 +3,30 @@ import { Button } from '../../ui/Button'
 
 import heroBackground from '../../../assets/images/bg-blue-orange.png'
 import cardTorra from '../../../assets/images/torra-visa.png'
+import { CalendarDays, CreditCard, BadgePercent, MapPin } from 'lucide-react'
+
+const heroBenefits = [
+  {
+    icon: CalendarDays,
+    title: 'Até 40 dias',
+    description: 'para pagar',
+  },
+  {
+    icon: CreditCard,
+    title: 'Parcele em até',
+    description: '10x sem juros',
+  },
+  {
+    icon: BadgePercent,
+    title: 'Descontos',
+    description: 'exclusivos',
+  },
+  {
+    icon: MapPin,
+    title: 'Aceito em todo',
+    description: 'o Brasil',
+  },
+]
 
 export function Hero() {
   return (
@@ -17,7 +41,7 @@ export function Hero() {
     >
       <Container>
         <div className="flex min-h-[620px] items-center justify-between">
-          <div className="max-w-[520px]">
+          <div className="max-w-[530]">
             <h1 className="text-6xl font-extrabold leading-tight">
               O Cartão que
               <br />
@@ -45,6 +69,34 @@ export function Hero() {
                 Ver benefícios
               </Button>
             </div>
+
+            <div className="mt-10 flex gap-8">
+              {heroBenefits.map((benefit) => {
+                const Icon = benefit.icon
+
+                return (
+                  <div
+                    key={benefit.title}
+                    className="flex items-start gap-3"
+                  >
+                    <Icon
+                      size={24}
+                      className="text-[var(--color-primary)]"
+                    />
+
+                    <div>
+                      <p className="font-semibold">
+                        {benefit.title}
+                      </p>
+
+                      <p className="text-sm text-gray-300">
+                        {benefit.description}
+                      </p>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
           </div>
 
           <div className="flex justify-end">
@@ -55,6 +107,8 @@ export function Hero() {
             />
           </div>
         </div>
+
+
       </Container>
     </section>
   )

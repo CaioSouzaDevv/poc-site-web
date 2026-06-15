@@ -2,13 +2,13 @@ import { Header } from '../../components/layout/Header'
 import { Hero } from '../../components/sections/Hero'
 
 export function Home() {
-  return (
-    <>
-      <Header />
+    return (
+        <>
+            <Header />
 
-      <main>
-        <Hero />
-      </main>
-    </>
-  )
+            <main>
+                <Hero />
+            </main>
+        </>
+    )
 }
