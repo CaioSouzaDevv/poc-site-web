@@ -1,0 +1,18 @@
+:root {
+ --color-primary: #ff6b00;
+  --color-primary-hover: #e65f00;
+
+  --color-dark: #07111f;
+  --color-dark-secondary: #0d1b2a;
+
+  --color-white: #ffffff;
+
+  --color-text: #1f2937;
+  --color-text-light: #6b7280;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --container-width: 1280px;
+}
