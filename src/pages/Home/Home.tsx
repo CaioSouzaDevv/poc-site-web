@@ -1,16 +1,14 @@
 import { Header } from '../../components/layout/Header'
-import { Container } from '../../components/layout/Container'
+import { Hero } from '../../components/sections/Hero'
 
 export function Home() {
-    return (
-        <>
-            <Header />
+  return (
+    <>
+      <Header />
 
-            <main>
-                <Container>
-                    <h1>Poc Site Cartão Torra</h1>
-                </Container>
-            </main>
-        </>
-    )
+      <main>
+        <Hero />
+      </main>
+    </>
+  )
 }
