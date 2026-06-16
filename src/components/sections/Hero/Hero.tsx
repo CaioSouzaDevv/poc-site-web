@@ -41,7 +41,7 @@ export function Hero() {
     >
       <Container>
         <div className="flex min-h-[620px] items-center justify-between">
-          <div className="max-w-[530]">
+          <div className="max-w-[700px]">
             <h1 className="text-6xl font-extrabold leading-tight">
               O Cartão que
               <br />
