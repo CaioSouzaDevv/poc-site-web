@@ -53,19 +53,14 @@ export function AppDownload() {
                                     <img
                                         src={appleButton}
                                         alt="Baixar na App Store"
-                                        className="h-12"
-                                    />
+                                        className="h-12" />
                                 </a>
 
-                                <a
-                                    href="#"
-                                    aria-label="Baixar no Google Play"
-                                >
+                                <a href="#" aria-label="Baixar no Google Play">
                                     <img
                                         src={androidButton}
                                         alt="Baixar no Google Play"
-                                        className="h-12"
-                                    />
+                                        className="h-12" />
                                 </a>
                             </div>
                         </div>

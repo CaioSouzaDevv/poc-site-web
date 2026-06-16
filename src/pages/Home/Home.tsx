@@ -5,6 +5,8 @@ import { Products } from '../../components/sections/Products/Products'
 import { Insurance } from '../../components/sections/Insurance'
 import { BonusBanner } from '../../components/sections/BonusBanner'
 import { AppDownload } from '../../components/sections/AppDownload'
+import { Contact } from '../../components/sections/Contact'
+
 export function Home() {
     return (
         <>
@@ -17,6 +19,7 @@ export function Home() {
                 <Insurance />
                 <BonusBanner />
                 <AppDownload />
+                <Contact />
             </main>
         </>
     )
