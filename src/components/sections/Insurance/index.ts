@@ -1,1 +1,1 @@
-export { Insurance } from './Insurance'
+export { Insurance } from "./Insurance";
