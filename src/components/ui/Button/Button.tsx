@@ -1,26 +1,44 @@
 import type { ReactNode } from 'react'
 
+type ButtonVariant = 'primary' | 'outline-light' | 'outline-primary'
+
 type ButtonProps = {
-    children: ReactNode
-    href?: string
-    className?: string
+  children: ReactNode
+  href?: string
+  variant?: ButtonVariant
+  className?: string
 }
 
-export function Button({ children, href, className = '' }: ButtonProps) {
-    const classes =
-        `inline-flex cursor-pointer items-center justify-center rounded-full bg-[var(--color-primary)] px-6 py-3 text-sm font-bold text-[var(--color-white)] transition hover:bg-[var(--color-primary-hover)] ${className}`
+const variants = {
+  primary:
+    'bg-[var(--color-primary)] text-[var(--color-white)] hover:bg-[var(--color-primary-hover)]',
 
-    if (href) {
-        return (
-            <a href={href} className={classes}>
-                {children}
-            </a>
-        )
-    }
+  'outline-light':
+    'border border-[var(--color-white)] bg-transparent text-[var(--color-white)] hover:bg-[var(--color-white)] hover:text-[var(--color-dark)]',
 
+  'outline-primary':
+    'border border-[var(--color-primary)] bg-transparent text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-[var(--color-white)]',
+}
+
+export function Button({
+  children,
+  href,
+  variant = 'primary',
+  className = '',
+}: ButtonProps) {
+  const classes = `inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold transition ${variants[variant]} ${className}`
+
+  if (href) {
     return (
-        <button className={classes}>
-            {children}
-        </button>
+      <a href={href} className={classes}>
+        {children}
+      </a>
     )
+  }
+
+  return (
+    <button className={classes}>
+      {children}
+    </button>
+  )
 }

@@ -1,6 +1,7 @@
 import { Header } from '../../components/layout/Header'
 import { Hero } from '../../components/sections/Hero'
 import { QuickActions } from '../../components/sections/QuickActions/QuickActions'
+import { Products } from '../../components/sections/Products/Products'
 export function Home() {
     return (
         <>
@@ -9,6 +10,7 @@ export function Home() {
             <main>
                 <Hero />
                 <QuickActions />
+                <Products />    
             </main>
         </>
     )
