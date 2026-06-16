@@ -81,7 +81,7 @@ export function Products() {
         <section className="py-24">
             <Container>
                 <div className="text-center">
-                    <span className="text-sm font-bold uppercase tracking-widest text-[var(--color-primary)]">
+                    <span className="text-sm font-extrabold uppercase tracking-widest text-[var(--color-primary)]">
                         Soluções para você
                     </span>
 
