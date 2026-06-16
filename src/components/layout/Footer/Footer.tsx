@@ -1,48 +1,48 @@
-    
+
 import torraLogo from '../../../assets/logos/torraLogo.svg'
 
 const footerColumns = [
-  {
-    title: 'Cartão Torra',
-    links: [
-      'Faça seu cartão',
-      'Benefícios',
-      'Bônus Torra',
-      'Multi Bônus',
-      'Pague sua fatura',
-    ],
-  },
-  {
-    title: 'Empréstimo Pessoal',
-    links: [
-      'Simule agora',
-      'Políticas',
-      'Educação Financeira',
-      'Outras informações',
-    ],
-  },
-  {
-    title: 'Seguros e Assistências',
-    links: [
-      'Seguro Lar',
-      'Seguro Auto',
-      'Seguro Saúde',
-      'Seguro Odonto',
-      'Bolsa Protegida',
-      'Proteção Financeira',
-    ],
-  },
-  {
-    title: 'Institucional',
-    links: [
-      'Fale Conosco',
-      'Política de Privacidade',
-      'Termos de Uso',
-      'Política de Segurança',
-      'Taxas e Tarifas',
-    ],
-  },
-]    
+    {
+        title: 'Cartão Torra',
+        links: [
+            'Faça seu cartão',
+            'Benefícios',
+            'Bônus Torra',
+            'Multi Bônus',
+            'Pague sua fatura',
+        ],
+    },
+    {
+        title: 'Empréstimo Pessoal',
+        links: [
+            'Simule agora',
+            'Políticas',
+            'Educação Financeira',
+            'Outras informações',
+        ],
+    },
+    {
+        title: 'Seguros e Assistências',
+        links: [
+            'Seguro Lar',
+            'Seguro Auto',
+            'Seguro Saúde',
+            'Seguro Odonto',
+            'Bolsa Protegida',
+            'Proteção Financeira',
+        ],
+    },
+    {
+        title: 'Institucional',
+        links: [
+            'Fale Conosco',
+            'Política de Privacidade',
+            'Termos de Uso',
+            'Política de Segurança',
+            'Taxas e Tarifas',
+        ],
+    },
+]
 
 export function Footer() {
     return (
@@ -56,11 +56,7 @@ export function Footer() {
                             className="w-32"
                         />
 
-                        <div className="mt-6 flex gap-4">
-                            Instagram
-                            Facebook
-                            Youtube
-                        </div>
+
                     </div>
 
                     {footerColumns.map((column) => (
