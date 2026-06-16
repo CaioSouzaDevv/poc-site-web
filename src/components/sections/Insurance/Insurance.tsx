@@ -45,7 +45,7 @@ const insurances = [
 
 export function Insurance() {
     return (
-        <section className="py-18">
+        <section className="py-12">
             <Container>
                 <div className="text-center align-center">
                     <span className="text-sm font-bold uppercase tracking-widest text-[var(--color-primary)]">
