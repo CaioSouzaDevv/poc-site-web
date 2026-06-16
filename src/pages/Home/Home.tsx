@@ -4,6 +4,7 @@ import { QuickActions } from '../../components/sections/QuickActions/QuickAction
 import { Products } from '../../components/sections/Products/Products'
 import { Insurance } from '../../components/sections/Insurance'
 import { BonusBanner } from '../../components/sections/BonusBanner'
+import { AppDownload } from '../../components/sections/AppDownload'
 export function Home() {
     return (
         <>
@@ -15,6 +16,7 @@ export function Home() {
                 <Products />
                 <Insurance />
                 <BonusBanner />
+                <AppDownload />
             </main>
         </>
     )

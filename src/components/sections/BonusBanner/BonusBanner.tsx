@@ -5,7 +5,7 @@ import bonusTorra from '../../../assets/images/bonus-torra.png'
 
 export function BonusBanner() {
     return (
-        <section className="py-12">
+        <section className="py-8">
             <Container>
                 <div
                     className="overflow-hidden rounded-3xl"

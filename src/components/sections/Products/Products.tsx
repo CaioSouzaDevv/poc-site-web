@@ -78,7 +78,7 @@ function getProductButtonClasses(variant: ProductVariant) {
 
 export function Products() {
     return (
-        <section className="py-12">
+        <section className="py-8">
             <Container>
                 <div className="text-center">
                     <span className="text-sm font-extrabold uppercase tracking-widest text-[var(--color-primary)]">
