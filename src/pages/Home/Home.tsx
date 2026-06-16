@@ -6,7 +6,7 @@ import { Insurance } from '../../components/sections/Insurance'
 import { BonusBanner } from '../../components/sections/BonusBanner'
 import { AppDownload } from '../../components/sections/AppDownload'
 import { Contact } from '../../components/sections/Contact'
-
+import { Footer } from '../../components/layout/Footer'
 export function Home() {
     return (
         <>
@@ -20,6 +20,7 @@ export function Home() {
                 <BonusBanner />
                 <AppDownload />
                 <Contact />
+                <Footer />
             </main>
         </>
     )
