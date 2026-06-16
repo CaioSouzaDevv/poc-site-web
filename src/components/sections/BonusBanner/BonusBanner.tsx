@@ -1,6 +1,7 @@
 import { Container } from '../../layout/Container'
 import { Button } from '../../ui/Button'
 
+
 import bonusTorra from '../../../assets/images/bonus-torra.png'
 
 export function BonusBanner() {
