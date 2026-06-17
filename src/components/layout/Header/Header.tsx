@@ -1,33 +1,8 @@
 import { Container } from "../Container";
 import torraLogo from '../../../assets/logos/torraLogo.svg'
 import { Button } from '../../ui/Button'
-
-const menuItems = [
-    {
-        label: 'Cartão Torra',
-        href: '/cartao-torra',
-    },
-    {
-        label: 'Empréstimo Pessoal',
-        href: '/emprestimo-pessoal',
-    },
-    {
-        label: 'Seguros e Assistências',
-        href: '/seguros-e-assistencias',
-    },
-    {
-        label: 'Benefícios',
-        href: '/beneficios',
-    },
-    {
-        label: 'Institucional',
-        href: '/institucional',
-    },
-    {
-        label: 'Ajuda',
-        href: '/ajuda',
-    },
-]
+import { menuItems } from '../../../data/navigation'
+import { HeaderMenuItem } from './HeaderMenuItem'
 
 export function Header() {
     return (
@@ -38,13 +13,15 @@ export function Header() {
                         <img className="w-28" src={torraLogo} alt="Cartão Torra" />
 
                     </div>
-
                     <nav>
-                        <ul className="flex items-center gap-6">{menuItems.map((menu) => (
-                            <li key={menu.href}>
-                                <a href={menu.href}>{menu.label}</a>
-                            </li>
-                        ))}</ul>
+                        <ul className="flex items-center gap-6">
+                            {menuItems.map((menuItem) => (
+                                <HeaderMenuItem
+                                    key={menuItem.href}
+                                    menuItem={menuItem}
+                                />
+                            ))}
+                        </ul>
                     </nav>
 
                     <div>
