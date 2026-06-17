@@ -1,7 +1,7 @@
-import { Home } from './pages/Home'
+import { PersonalLoan } from './pages/PersonalLoan'
 
 function App() {
-  return <Home />
+  return <PersonalLoan />
 }
 
 export default App
