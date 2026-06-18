@@ -1,0 +1,1 @@
+export { ProtectedBagHero } from './ProtectedBagHero'

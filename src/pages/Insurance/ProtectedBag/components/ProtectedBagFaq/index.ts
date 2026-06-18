@@ -1,0 +1,1 @@
+export { ProtectedBagFaq } from './ProtectedBagFaq'

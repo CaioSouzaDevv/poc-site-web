@@ -1,0 +1,1 @@
+export { ProtectedBagHighlights } from './ProtectedBagHighlights'

@@ -1,7 +1,7 @@
-import { DentalInsurance } from './pages/Insurance/DentalInsurance'
+import { ProtectedBag } from './pages/Insurance/ProtectedBag'
 
 function App() {
-  return <DentalInsurance />
+  return <ProtectedBag />
 }
 
 export default App

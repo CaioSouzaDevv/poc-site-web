@@ -1,0 +1,1 @@
+export { ProtectedBag } from './ProtectedBag'

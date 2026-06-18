@@ -1,0 +1,1 @@
+export { ProtectedBagServices } from './ProtectedBagServices'
