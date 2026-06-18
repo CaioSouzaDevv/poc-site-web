@@ -4,6 +4,7 @@ import { HomeInsuranceHero } from './components/HomeInsuranceHero'
 import { HomeInsuranceHighlights } from './components/HomeInsuranceHighlights'
 import { HomeInsuranceServices } from './components/HomeInsuranceServices'
 import { HomeInsuranceSolutions } from './components/HomeInsuranceSolutions'
+import { HomeInsuranceFaq } from './components/HomeInsuranceFaq'
 
 export function HomeInsurance() {
   return (
@@ -15,6 +16,7 @@ export function HomeInsurance() {
         <HomeInsuranceHighlights />
         <HomeInsuranceServices />
         <HomeInsuranceSolutions />
+        <HomeInsuranceFaq />
       </main>
 
       <Footer />

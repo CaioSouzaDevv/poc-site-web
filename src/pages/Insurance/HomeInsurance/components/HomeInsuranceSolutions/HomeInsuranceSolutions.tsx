@@ -3,6 +3,9 @@ import { PhoneCall, Store, FileText } from 'lucide-react'
 import { Container } from '../../../../../components/layout/Container'
 import { Button } from '../../../../../components/ui/Button'
 
+const regulationUrl =
+  'https://www.cartaotorra.com.br/wp-content/uploads/2026/01/Regulamento-Assistencia-Lar.pdf'
+
 export function HomeInsuranceSolutions() {
   return (
     <section className="bg-[var(--color-dark)] py-20 text-white">
@@ -10,16 +13,16 @@ export function HomeInsuranceSolutions() {
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <span className="text-sm font-extrabold uppercase tracking-wide text-[var(--color-primary)]">
-              Assistência quando precisar
+              Como funciona
             </span>
 
             <h2 className="mt-4 max-w-[620px] text-4xl font-extrabold leading-tight">
-              Soluções para diversas situações do dia a dia
+              Assistência para imprevistos no seu lar
             </h2>
 
             <p className="mt-6 max-w-[560px] text-base leading-relaxed text-white/75">
-              Conte com suporte para imprevistos residenciais, como problemas
-              hidráulicos, elétricos, chaveiro, vidraceiro e outros serviços
+              Conte com suporte para serviços emergenciais residenciais, como
+              encanador, eletricista, chaveiro, vidraceiro e outros atendimentos
               previstos no regulamento.
             </p>
 
@@ -28,20 +31,23 @@ export function HomeInsuranceSolutions() {
                 Acionar assistência
               </Button>
 
-              <Button href="#regulamento" variant="outline-light">
-                Ver regulamento
+              <Button
+                href="https://www.lojastorra.com.br/encontre-uma-loja"
+                variant="outline-light"
+              >
+                Encontrar loja
               </Button>
             </div>
           </div>
 
           <div className="rounded-3xl bg-white p-8 text-[var(--color-dark)]">
             <strong className="text-2xl font-extrabold">
-              Como funciona?
+              O que você precisa saber
             </strong>
 
             <div className="mt-8 space-y-6">
               <div className="flex gap-4">
-                <PhoneCall className="mt-1 text-[var(--color-primary)]" />
+                <PhoneCall className="mt-1 shrink-0 text-[var(--color-primary)]" />
                 <div>
                   <strong className="block">Acione pelo telefone</strong>
                   <span className="text-sm text-slate-600">
@@ -51,7 +57,7 @@ export function HomeInsuranceSolutions() {
               </div>
 
               <div className="flex gap-4">
-                <Store className="mt-1 text-[var(--color-primary)]" />
+                <Store className="mt-1 shrink-0 text-[var(--color-primary)]" />
                 <div>
                   <strong className="block">Contrate em loja</strong>
                   <span className="text-sm text-slate-600">
@@ -61,11 +67,18 @@ export function HomeInsuranceSolutions() {
               </div>
 
               <div className="flex gap-4">
-                <FileText className="mt-1 text-[var(--color-primary)]" />
+                <FileText className="mt-1 shrink-0 text-[var(--color-primary)]" />
                 <div>
                   <strong className="block">Consulte as condições</strong>
                   <span className="text-sm text-slate-600">
-                    Serviços sujeitos às regras, limites e vigência do regulamento.
+                    Serviços sujeitos às regras, limites, vigência e condições do{' '}
+                    <a
+                      href={regulationUrl}
+                      className="font-bold text-[var(--color-primary)] underline-offset-4 hover:underline"
+                    >
+                      regulamento
+                    </a>
+                    .
                   </span>
                 </div>
               </div>

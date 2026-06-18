@@ -1,7 +1,7 @@
-import { HomeInsurance } from './pages/Insurance/HomeInsurance'
+import { AutoInsurance } from './pages/Insurance/AutoInsurance'
 
 function App() {
-  return <HomeInsurance />
+  return <AutoInsurance />
 }
 
 export default App

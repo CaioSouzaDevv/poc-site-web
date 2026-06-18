@@ -1,0 +1,1 @@
+export { AutoInsuranceFaq } from './AutoInsuranceFaq'
