@@ -1,34 +1,34 @@
 import {
-  ShoppingBag,
-  CreditCard,
-  Banknote,
+  HeartPulse,
   ShieldCheck,
+  Briefcase,
+  Activity,
+  Pill,
   FileText,
-  CircleDollarSign,
 } from 'lucide-react'
 
 import { Container } from '../../../../../components/layout/Container'
 
 const coverages = [
   {
-    icon: ShoppingBag,
-    title: 'Bolsa protegida',
-  },
-  {
-    icon: CreditCard,
-    title: 'Perda ou roubo de cartão',
-  },
-  {
-    icon: Banknote,
-    title: 'Saque sob coação',
+    icon: HeartPulse,
+    title: 'Morte',
   },
   {
     icon: ShieldCheck,
-    title: 'Compra sob coação',
+    title: 'Invalidez permanente total por acidente',
   },
   {
-    icon: CircleDollarSign,
-    title: 'Indenização conforme cobertura',
+    icon: Briefcase,
+    title: 'Perda de renda por desemprego involuntário',
+  },
+  {
+    icon: Activity,
+    title: 'Incapacidade física temporária',
+  },
+  {
+    icon: Pill,
+    title: 'Desconto em farmácias',
   },
   {
     icon: FileText,
@@ -36,24 +36,24 @@ const coverages = [
   },
 ]
 
-export function ProtectedBagHighlights() {
+export function FinancialProtectionServices() {
   return (
     <section id="servicos" className="bg-slate-50 py-20">
       <Container>
         <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr] lg:items-center">
           <div>
             <span className="text-sm font-extrabold uppercase tracking-wide text-[var(--color-primary)]">
-              Cobertura para imprevistos
+              Cobertura para momentos difíceis
             </span>
 
             <h2 className="mt-4 max-w-[520px] text-4xl font-extrabold leading-tight text-[var(--color-dark)]">
-              Mais proteção em situações de roubo, perda ou coação
+              Mais segurança para sua vida financeira
             </h2>
 
             <p className="mt-6 max-w-[520px] text-base leading-relaxed text-slate-600">
-              O Bolsa Protegida Cartão Torra oferece cobertura para situações
-              previstas no seguro, como perda ou roubo de cartão, compra ou
-              saque sob coação, conforme os limites e condições do regulamento.
+              A Proteção Financeira Cartão Torra oferece coberturas para
+              situações previstas no seguro, ajudando a proteger sua rotina em
+              momentos de imprevisto.
             </p>
           </div>
 

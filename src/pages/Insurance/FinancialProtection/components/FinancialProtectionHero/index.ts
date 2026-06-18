@@ -1,0 +1,1 @@
+export { FinancialProtectionHero } from './FinancialProtectionHero'

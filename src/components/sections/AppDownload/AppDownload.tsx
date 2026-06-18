@@ -1,5 +1,3 @@
-import { Smartphone, Receipt, CreditCard, Bell } from 'lucide-react'
-
 import { Container } from '../../layout/Container'
 
 import appDownload from '../../../assets/images/app-download.png'

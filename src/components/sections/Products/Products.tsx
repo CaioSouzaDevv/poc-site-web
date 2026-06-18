@@ -68,14 +68,6 @@ function getProductCardClasses(variant: ProductVariant) {
     return `${base} bg-[var(--color-white)] text-[var(--color-dark)]`
 }
 
-function getProductButtonClasses(variant: ProductVariant) {
-    if (variant === 'light') {
-        return 'border border-[var(--color-primary)] bg-transparent text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-[var(--color-white)]'
-    }
-
-    return 'border border-[var(--color-white)] bg-transparent text-[var(--color-white)] hover:bg-[var(--color-white)] hover:text-[var(--color-dark)]'
-}
-
 export function Products() {
     return (
         <section className="py-8">

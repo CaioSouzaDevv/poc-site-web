@@ -1,9 +1,14 @@
-import { Container } from '../../layout/Container'
+import type { ReactNode } from 'react'
 
-export function Card () {
+type CardProps = {
+  children: ReactNode
+  className?: string
+}
 
-    return (
-
-        
-    );
+export function Card({ children, className = '' }: CardProps) {
+  return (
+    <article className={`rounded-2xl bg-white p-6 shadow-sm ${className}`}>
+      {children}
+    </article>
+  )
 }
