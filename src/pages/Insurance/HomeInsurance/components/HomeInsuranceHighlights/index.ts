@@ -1,0 +1,1 @@
+export { HomeInsuranceHighlights } from './HomeInsuranceHighlights'

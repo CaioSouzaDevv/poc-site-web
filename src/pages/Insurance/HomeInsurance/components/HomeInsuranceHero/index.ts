@@ -1,0 +1,1 @@
+export { HomeInsuranceHero } from './HomeInsuranceHero'
